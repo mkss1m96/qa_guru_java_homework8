@@ -1,6 +1,5 @@
 package tests;
 
-import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import model.Example;
 import org.junit.jupiter.api.Assertions;
@@ -12,7 +11,7 @@ import java.io.Reader;
 import java.nio.charset.StandardCharsets;
 
 public class JsonParsingTest {
-    private ClassLoader cl = JsonParsingTest.class.getClassLoader();
+    private final ClassLoader cl = JsonParsingTest.class.getClassLoader();
     private final ObjectMapper mapper = new ObjectMapper();
 
     @Test
